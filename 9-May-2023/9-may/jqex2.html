@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="C:\Users\IET\Desktop\WPT assignment/JQuery.js"></script>
+
+    <script>
+        $().ready(()=>{
+            $("#b1").click(()=>{
+                    let x = new Date()
+                    let output= x.getHours()+":"+x.getMinutes()+":"+x.getSeconds()
+                    $("#i1").val(output) //printing on textfield
+                    $("#p1").text(output) //printing in p tag
+            })
+                        
+        })
+    </script>
+
+
+</head>
+
+
+<body>
+    <button id="b1" >show</button>
+    <input type="text" id="i1" />
+    <P id="p1"></P>
+
+
+</body>
+</html>
